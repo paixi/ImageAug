@@ -15,8 +15,12 @@ The transformations are designed to be chained together using `torchvision.trans
 
 ### Install
 
+With pip:
 ```sh
-pip3 install -r requirements.txt
+pip3 install ImageAug
+```
+Or with setup.py:
+```sh
 python3 setup.py install
 ```
 **Requirements:**
@@ -24,6 +28,11 @@ python3 setup.py install
 * Pillow
 * torchvision
 * numpy
+* setuptools
+
+```sh
+pip3 install -r requirements.txt
+```
 
 ### Example
 
