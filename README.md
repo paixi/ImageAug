@@ -79,6 +79,12 @@ out.save("out.png")
 
 This project is still a work in progress.
 
-* Uniform distribution for RandomRotatedCrop
+### Bugs
+
+* `RandomRotatedCrop`, setting downscale to 1 will not quite fit the image to the crop size because it does not take into account the angle yet and assumes the worst case.
+
+### Features
+
+* Uniform and other random distributions for RandomRotatedCrop
 * Color lookup table for faster conversions between colorspaces
 * Add image, text, shape, and pixelation occulsions

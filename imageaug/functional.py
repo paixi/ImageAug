@@ -12,6 +12,7 @@ def pixelate(x, size, area=None):
     return x
 
 def rotated_crop_scale(img, crop_size):
+    # XXX take into account the angle
     return min(img.width, img.height) / (crop_size[0]**2 + crop_size[1]**2)**0.5
 
 def center(img):
@@ -77,7 +78,7 @@ def random_rotated_crop(img, crop_size, mean, std, downscale=0, resample=PIL.Ima
     angle = random.normalvariate(mean, std)
     if downscale > 0:
         crop_scale = rotated_crop_scale(img, crop_size)
-        scale = max(1, crop_scale * downscale)
+        scale = max(1, crop_scale * min(1, downscale))
         if resample == PIL.Image.NEAREST:
             img = img.resize((int(round(img.width / scale)), int(round(img.height / scale))), resample=PIL.Image.NEAREST)
         else: # Hamming resampling provides crisper rescaling
