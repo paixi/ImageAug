@@ -73,3 +73,6 @@ This project is still a work in progress.
 * Uniform distribution for RandomRotatedCrop
 * Color lookup table for faster conversions between colorspaces
 * Add image, text, shape, and pixelation occulsions
+
+## Project Page
+Github: [https://github.com/paixi/ImageAug](https://github.com/paixi/ImageAug)

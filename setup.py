@@ -7,7 +7,7 @@ with open('README.md', 'r') as fh:
 
 setuptools.setup(
     name='ImageAug',      
-    version='0.1.0',
+    version='0.1.0post',
     author='Paixi',
     author_email='paixi@protonmail.com',
     description='Image augmentation for PyTorch',
