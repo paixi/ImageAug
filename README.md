@@ -86,5 +86,7 @@ This project is still a work in progress.
 ### Features
 
 * Uniform and other random distributions for RandomRotatedCrop
+* Perspective warping
+* Custom warp functions
 * Color lookup table for faster conversions between colorspaces
 * Add image, text, shape, and pixelation occulsions
